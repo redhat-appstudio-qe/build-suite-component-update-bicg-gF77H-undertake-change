@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: multi-component-child-gund
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-appstudio-qe/build-e2e-cnyh-tenant/build-suite-component-update-bicg/multi-component-child-gund@sha256:7771930bf60e543c28cba53144690b8c94a946c2385eab611562acd008af14b3
+        name: container-image
+        resources: {}
+status: {}
