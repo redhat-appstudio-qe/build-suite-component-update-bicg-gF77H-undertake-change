@@ -23,7 +23,7 @@ spec:
         app.kubernetes.io/instance: multi-component-child-gund
     spec:
       containers:
-      - image: image
+      - image: quay.io/redhat-appstudio-qe/build-e2e-cnyh-tenant/build-suite-component-update-bicg/multi-component-child-gund@sha256:7771930bf60e543c28cba53144690b8c94a946c2385eab611562acd008af14b3
         imagePullPolicy: Always
         name: container-image
         ports:
